@@ -149,3 +149,9 @@ class Chef {
         return dinner;
     }
 }
+
+
+chef = new Chef();
+console.log(chef.createDinner('Teriyaki Pineapple Meatballs', 'Baked BBQ Chicken Thighs', 'Apple Pie'));
+console.log(chef.createDinner('Fruit Charcuterie Board', 'Mississippi Chicken','Ice Cream'));
+console.log(chef.createDinner('Party Shrimp', 'Moo Shu Pork', 'Cheesecake'));
