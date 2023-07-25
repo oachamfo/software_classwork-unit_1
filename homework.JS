@@ -79,3 +79,56 @@ class Person{
         this.bankAccount -= 1;
     }
 }
+
+
+//output a hamster object to the console as a test
+hamster = new Hamster('testHamster');
+console.log(hamster);
+
+//1.
+person1 = new Person('Timmy');
+//2.
+person1.ageUp(5);
+console.log(person1);
+
+//3.
+person1.eat();
+person1.eat();
+person1.eat();
+person1.eat()
+person1.eat();
+console.log(`Timmy's weight: `+ person1.getWeight());
+
+//4.
+function TimmyExercisesNtimes(n){
+    for(i=1; i<=n; i++){
+        person1.exercise();
+        console.log('Timmy exercises: ' + i + ' time(s)');
+    }  
+}
+TimmyExercisesNtimes(5)
+console.log(`Timmy's weight: ` + person1.getWeight());
+
+//5.
+person1.ageUp(9);
+
+//6.
+hamster2 = new Hamster('Gus');
+
+//7.
+hamster2.owner = 'Timmy';
+
+//8.
+person1.buyGas();
+
+//9.
+person1.ageUp(15);
+
+//10.
+person1.eat();
+person1.eat();
+
+//11.
+TimmyExercisesNtimes(2)
+console.log(`Timmy's weight: ` + person1.getWeight());
+
