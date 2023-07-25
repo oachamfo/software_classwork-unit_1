@@ -132,3 +132,20 @@ person1.eat();
 TimmyExercisesNtimes(2)
 console.log(`Timmy's weight: ` + person1.getWeight());
 
+class Dinner { 
+    constructor(appetizer, entree, dessert){
+        this.appetizer = appetizer;
+        this.entree = entree; 
+        this.dessert = dessert;
+    }
+}
+
+class Chef {
+    
+    //Chef is a factory of Dinner
+    //Chef method that returns a Dinner object
+    createDinner(appetizer, entree, dessert){
+        let dinner = new Dinner(appetizer, entree, dessert);
+        return dinner;
+    }
+}
